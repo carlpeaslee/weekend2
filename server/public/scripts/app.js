@@ -40,7 +40,6 @@ $(document).ready(function(){
     } else {
       $('.stage').empty();
       createSlide(currentSlide);
-      $('.progress-bar').attr('aria-valuenow', currentSlide + 1);
     };
   });
 
@@ -71,8 +70,6 @@ function createSlide(i) {
   $('.progress-bar').attr('aria-valuenow', currentSlide + 1);
   $('.progress-bar').attr('style', "width: " + Math.floor(((currentSlide + 1) / rawData.kappa.length) * 100) + "%");
 }
-
-
 
 function incrementTimer() {
   timer ++;
