@@ -24,7 +24,7 @@ $(document).ready(function(){
     timer = 0;
     if (currentSlide >= rawData.kappa.length) {
       currentSlide = rawData.kappa.length;
-      $('.stage').html('<h1>Kappa Karousel</h1>');
+      $('.stage').html('<h1>That is all of Kappa!</h1>');
     } else {
       $('.stage').empty();
       createSlide(currentSlide);
@@ -36,7 +36,7 @@ $(document).ready(function(){
     timer = 0;
     if (currentSlide < 0) {
       currentSlide = -1;
-      $('.stage').html('<h1>Thats all of Kappa!</h1>');
+      $('.stage').html('<h1>Welcome to the Kappa Karousel!</h1>');
     } else {
       $('.stage').empty();
       createSlide(currentSlide);
